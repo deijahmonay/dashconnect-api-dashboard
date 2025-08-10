@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --secondary-color: #F88379; 
+  --accent-color: #D291BC;    
+  --highlight-color: #E75480;
+  --deep-accent-color: #B76E79; 
+  --background-color: #F4C2C2; 
+  --text-color: #1B223A;    
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-item {
+  background: rgb(239, 200, 237);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+  min-height: 350px;
+  box-sizing: border-box;
+  gap: 12px;
+}
+
+.grid-item h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0; 
+}
+
+
+input {
+  display: block;
+  width: 100%;
+  border: 2px solid #ff0ecf;
+  background: #fff;
+  color: var(--text-color);
+  font-size: 16px;
+  border-radius: 6px;
+  padding: .5rem .75rem;
+  margin-bottom: 0; 
+}
+input:focus {
+  outline: none;
+  border-color: #ed64e4;
+  box-shadow: 0 0 0 3px rgba(237,100,228,.2);
+}
+
+.output {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ff0ecf;
+  border-radius: 6px;
+  padding: .5rem .6rem;
+  overflow-y: auto;
+  max-height: 360px;
+  padding-right: .25rem;
+}
+
+.grid-item button {
+  width: 100%;
+  background-color: #ed64e4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: .6rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 3px 10px rgba(237,100,228,.25);
+  transition: background-color .12s ease, transform .12s ease;
+  margin-bottom: 0; 
+}
+.grid-item button:hover {
+  background-color: #ff0ecf;
+  transform: translateY(-1px);
+}
+
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0; 
+}
+
+.container > .row + .row { margin-top: 1.5rem; }
