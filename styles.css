@@ -21,6 +21,11 @@ html, body {
   color: var(--text-color);
 }
 
+h1 {
+  font-weight: bold;
+  color:#fb00b8
+}
+
 body {
   background-color: var(--background-color);
   padding: 2rem;
